@@ -1,0 +1,39 @@
+{
+    "name": "beeyev/laravel-flightaware-client",
+    "description": "Laravel FlightAware API Client",
+    "keywords": [
+        "flightaware",
+        "laravel flightaware api client"
+    ],
+    "homepage": "https://github.com/beeyev/laravel-flightaware-client",
+    "authors": [
+        {
+            "name": "Alexander Tebiev",
+            "email": "tebiev@mail.com",
+            "homepage": "https://github.com/beeyev/",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "extra": {
+        "laravel": {
+             "providers": [
+				"Beeyev\\LaravelFlightAwareClient\\FlightAwareServiceProvider"
+			],
+            "aliases": {
+                "FlightAware": "Beeyev\\LaravelFlightAwareClient\\FlightAwareFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Beeyev\\LaravelFlightAwareClient\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
